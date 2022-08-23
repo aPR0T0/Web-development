@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: rgb(253, 236, 214);
+}
+header{
+    background-color: rgb(237, 182, 19);
+    padding: 40px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(255, 169, 30);
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    /* overflow: hidden; */
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;/*It is aligning the text inside their own boxes*/
+    padding: 7px 20px 7px 20px;
+    float: left;
+    margin-top:15px;
+    margin-bottom: 15px;
+    /* float: right; */
+    /* It Just The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning). */
+    color: rgb(0, 0, 0);
+}
+nav a:hover{
+    float: left;
+    background-color:  rgba(169, 130, 12, 0.849);
+    border-radius: 20px;
+}
+a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"],a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"],a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]{
+    padding: 10px;
+    background-color: rgba(230, 198, 103, 0.941);
+    border-radius: 15px 0px 10px 0px ;
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+}
+a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"]:hover{
+    background-color:rgba(216, 167, 17, 0.941);
+}
+footer{
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    overflow: hidden;
+    height: 60px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    font-size: 1.15em;
+}
+main{
+    text-align: center;
+}
+h1{
+    background-color: rgba(216, 167, 17, 0.941);
+    border-radius: 25px;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding: 10px;
+}
+h2{
+    background-color: rgba(255, 169, 30, 0.639);
+    border-radius: 25px   0px 20px 0px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 10px;
+}
+iframe,video,.X{
+    border-radius: 15px;
+}
+.Circle{
+    width:30%;
+    clip-path: circle(43% at 49% 50%);
+}
+.Found{
+    font-size: 2em;
+}
+@media all and (min-width:1000px){
+    nav{
+        padding-left: 28%;
+    }
+    footer{
+        padding-left: 20%;
+    }
+}
+@media all and (max-width:999px) and (min-width:700px){
+    nav{
+        padding-left:10%;
+    }
+    footer{
+        font-size: 8px;
+    }
+    body{
+        font-size: 12px;
+    }
+}
+@media all and (max-width:699px){
+    body{
+        font-size: 6px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body{
+            margin:0px auto;
+            max-width: 900px;
+            width: 90%;
+        }
+        #box{
+            float: left ;
+            margin: 15px;
+            width: 25%;
+            height: 10%;
+            border-radius: 5px;
+            background-color: lightblue;
+            padding: 1em;
+        }
+        .Special{
+            background-color:lightskyblue;
+            padding: 15px;
+            border-radius:15px 15px 0px 0px;/* left riight bottom left and bottom right corners resectively*/
+        }
+        .Cleared{
+            clear: left;
+
+            /* It is used to remove float property from a perticular element */
+            /* Just remember that direction of clearance should be same as the direction of the float */
+        }
+    </style>
+</head>
+<body>
+    <h1>Float Property</h1>
+    <img id="box" src="User.png" alt="">
+    <h1 class="Special">Resume</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, itaque omnis. Doloribus, laboriosam voluptatibus? Dolorem dignissimos veritatis obcaecati aut alias magni vero sapiente? Ipsum amet</p>
+    <p class="Cleared">quos eum quasi quam nam animi necessitatibus quae sint expedita veniam dolores, laudantium mollitia totam veritatis repellat natus consequatur cum vero vitae? Voluptas, odio vel aspernatur expedita beatae distinctio deserunt vero provident eligendi est </p>
+    <p>voluptatibus, tempora, quisquam aliquam a aut corporis dolorum! Assumenda maxime ratione saepe corrupti nam reprehenderit beatae tempore modi, eligendi aperiam praesentium asperiores enim laudantium magni expedita alias aliquid aspernatur voluptatum dolorum! Rem quas tempora tempore facere quibusdam similique repudiandae amet itaque.</p>
+</body>
+</html>

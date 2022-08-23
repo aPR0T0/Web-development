@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Specificity</title>
+    <style>
+        *{
+            background-color: rgb(21, 21, 21);
+        }
+        ul#Summer-drinks li.favourites:hover{
+            color: lightcoral;
+            font-style: italic;
+            font-weight: bold;
+            list-style-position:inside;
+        }
+        ul#Summer-drinks li.favourites{
+            color: lightcoral;
+            font-style: italic;
+            font-weight: bold;
+            margin: 2px;
+            margin-left: 10px;
+        }
+        ul#Summer-drinks li{/*This is has the higher specificity so it will work (to check the specificity just hover over the specifier)*/
+            font-size: 12px;
+            color: rgb(238, 156, 50);
+        }
+    </style>
+    <link rel="stylesheet" href="Specificity.css">
+    <!--Link and the style tags nearly have the same specifity and if the link is written at the bottom then,the preference is assigned to it-->
+</head>
+<!--Inheritance is also seen in the CSS i.e. if you apply some property to the parent element then it is also tranfered to the child-->
+<body>
+    <ul id="Summer-drinks">
+        <li>Mountains</li>
+        <li class="favourites" style="font-size: 32px;">Mango</li><!--The the inline CSS has the highest specificity-->
+        <li>Fanta</li>
+    </ul>
+</body>
+</html>
