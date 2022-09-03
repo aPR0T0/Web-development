@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{ 
+            display: grid;
+            width: 300px;
+            height: 780px;
+            /* fr basically means fractions, the fractions are with respect to width when accessing through the columns, and with respect to the height when accessing through the rows  */
+            grid-template-columns: repeat(2, 1fr) 2fr ;
+            /* Repeat basically applies the same property given number of the times */
+            grid-template-rows:1fr 2fr;
+            grid-gap: 7px;
+        }
+        .items{
+            background-color: rgb(208, 146, 52);
+            border-radius: 3px;
+            border: solid 2px rgb(126, 126, 126);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Box 1</div>
+        <div class="items">Box 2</div>
+        <div class="items">Box 3</div>
+        <div class="items">Box 4</div>
+        <div class="items">Box 5</div>
+    </div>
+</body>
+</html>
