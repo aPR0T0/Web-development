@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Flexbox</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Box1{
+        display: flex;
+        height: 785px;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(247, 166, 67);
+    }
+    .Box2{
+        display: flex;
+        height: 785px;
+        width: 30%;
+        flex-direction: column;
+    }
+    header{
+        width: 1000px;
+        height: 650px;
+        background-color: aqua;
+    }
+    nav{
+        width:300px;
+        align-self: center;
+        padding-left: 38%;
+    }
+    main{
+        width: 1000px;
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="Box1">
+            <nav>
+                <h1>nav</h1>
+            </nav>
+        </div>
+        <div class="Box2">
+            <header>
+                <h1>Header</h1>
+            </header>
+            
+            <main>
+                <h1>main</h1>
+            </main>
+            <footer>
+                <h2>Footer</h2>
+            </footer>
+        </div>  
+    </div>
+</body>
+</html>
