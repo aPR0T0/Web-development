@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        .parent{
+            display: grid;
+            height: 780px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(6,1fr);
+            grid-gap:5px;
+        }
+        .box1,.box2,.box3,.box4,.box5{
+            padding-left: 2%;
+            padding-top: 10px;
+            font-size: xx-large;
+            background-color: rgb(245, 87, 34);
+            border-radius: 3px;
+            color: white;
+        }
+        #Header{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        #nav{
+            grid-row-start: 1;
+            grid-row-end: 7;
+        }
+        #ads{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+        #article{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+        #footer{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box2" id="nav">nav</div>
+        <div class="box1" id="Header">Header</div>
+        <div class="box4" id="ads">ads</div>
+        <div class="box3" id="article">article</div>
+        <div class="box5" id="footer">footer</div>
+    </div>
+</body>
+</html>
