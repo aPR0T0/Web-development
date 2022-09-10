@@ -1,5 +1,7 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;  
+    /* This allows us to change even the box model */
+    list-style: none;
 }
 body{
     margin: 0px;
@@ -28,10 +30,12 @@ nav a {
     /* float: right; */
     /* It Just The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning). */
     color: rgb(0, 0, 0);
+    border-radius: 18px;
+    transition: background-color 0.5s, border-radius 0.2s;
 }
 nav a:hover{
     float: left;
-    background-color:  rgba(169, 130, 12, 0.849);
+    background-color:  rgba(255, 191, 0, 0.849);
     border-radius: 20px;
 }
 a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"],a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"],a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]{
@@ -46,19 +50,23 @@ a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUF
     background-color:rgba(216, 167, 17, 0.941);
 }
 footer{
-    position: sticky;
     bottom: 0px;
     background-color: black;
     overflow: hidden;
     height: 60px;
 }
 footer a{
+    display: block;
     color: white;
     text-decoration: none;
-    text-align: center;
     padding: 20px;
     float: left;
     font-size: 1.15em;
+}
+.copyw{
+    padding-top: 25px;
+    float: right;
+    font-size: 0.75em;
 }
 main{
     text-align: center;
@@ -87,6 +95,9 @@ iframe,video,.X{
 .Found{
     font-size: 2em;
 }
+.paadding{
+    padding: 20px;
+}
 @media all and (min-width:1000px){
     nav{
         padding-left: 28%;
@@ -108,6 +119,16 @@ iframe,video,.X{
 }
 @media all and (max-width:699px){
     body{
-        font-size: 6px;
+        font-size: 14px;
     }
+}
+section:nth-child(even){
+    background-color: rgb(255, 213, 158);
+}
+img{
+    padding: 0px 10px;
+}
+iframe{
+    padding-right: 5px;
+    padding-left: 5px;
 }
