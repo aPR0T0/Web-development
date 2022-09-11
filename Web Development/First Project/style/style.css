@@ -8,7 +8,6 @@ body{
     background-color: #262626;
 }
 .header{
-    height: 17vh;
     background-color: #FFCC00;
     text-align: center;
     margin: 0px;
@@ -19,6 +18,7 @@ body{
     min-height: 100px;
     background-position: top center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%;
 }
 nav {
@@ -51,14 +51,17 @@ nav a:hover{
 }
 a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"],a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"],a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]{
     padding: 10px;
-    background-color: rgba(230, 198, 103, 0.941);
-    border-radius: 15px 0px 10px 0px ;
+    background-color:  #FFCC00;
+    border-radius: 5px;
     text-decoration: none;
     color:black;
     font-weight: 700;
 }
 a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"]:hover{
     /* background-color:rgba(216, 167, 17, 0.941); */
+    color: #FFCC00;
+}
+section{
     color: #FFCC00;
 }
 footer{
@@ -86,10 +89,21 @@ main{
 
 h2{
     color: #FFCC00;
-    border-radius: 25px   0px 20px 0px;
+    background-color: #42424278;
+    border-radius:5px;
     margin-left: 40%;
     margin-right: 40%;
     padding: 10px;
+    transition: background 1.5s;
+}
+h2:hover{
+    background: linear-gradient(to right,#42424278,#767676 );
+}
+.c2{
+    transition: background 1.5s;
+}
+.c2:hover{
+    background: linear-gradient(to right,#767676,#42424278 ); 
 }
 .right-align{
     margin-left: auto;
@@ -107,6 +121,7 @@ iframe,video,.X{
 }
 .Found{
     font-size: 2em;
+    color: #FFCC00;
 }
 .paadding{
     padding: 20px;
@@ -126,12 +141,14 @@ iframe,video,.X{
 } */
 @media all and (max-width:699px){
     nav{
-        float: left;
         flex-direction: column;
     }
-}
-section:nth-child(even){
-    background-color: rgb(255, 213, 158);
+    .right-align{
+        margin-right: auto;
+    }
+    .header{
+        height: 6.33vh;
+    }
 }
 img{
     padding: 0px 10px;
