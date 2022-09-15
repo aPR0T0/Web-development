@@ -59,7 +59,8 @@ a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUF
 }
 a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"]:hover{
     /* background-color:rgba(216, 167, 17, 0.941); */
-    color: #FFCC00;
+    background-color: #ffd428;
+    color: #000000;
 }
 section{
     color: #FFCC00;
@@ -100,10 +101,10 @@ h2:hover{
     background: linear-gradient(to right,#42424278,#767676 );
 }
 .c2{
-    transition: background 1.5s;
+    animation: background 1.5s;
 }
 .c2:hover{
-    background: linear-gradient(to right,#767676,#42424278 ); 
+    background-color: linear-gradient(to right,#767676,#42424278 ); 
 }
 .right-align{
     margin-left: auto;
@@ -112,7 +113,7 @@ h2:hover{
 .high{
     order:10;
 }
-iframe,video,.X{
+iframe,video{
     border-radius: 15px;
 }
 .Circle{
@@ -126,7 +127,14 @@ iframe,video,.X{
 .paadding{
     padding: 20px;
 }
-
+.found1{
+    color: aliceblue;
+    font-size: 1.3em;
+}
+.found12{
+    color: aliceblue;
+    font-size: 1em;
+}
 /*
 @media all and (max-width:999px) and (min-width:700px){
     nav{
@@ -139,6 +147,43 @@ iframe,video,.X{
         font-size: 12px;
     }
 } */
+
+
+
+.xtreme {
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.carousel-cell img{
+    max-width: 100%;
+}
+.carousel-cell {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+    position: relative;
+    width: 100%;
+    height: 200px;
+} 
+.ck{
+    margin-top: 50px;
+}
+.carousel-cell iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.X{
+    border-radius: 10px;
+    width: 22%;
+}
 @media all and (max-width:699px){
     nav{
         flex-direction: column;
@@ -149,11 +194,4 @@ iframe,video,.X{
     .header{
         height: 6.33vh;
     }
-}
-img{
-    padding: 0px 10px;
-}
-iframe{
-    padding-right: 5px;
-    padding-left: 5px;
 }
