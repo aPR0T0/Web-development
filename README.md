@@ -1,4 +1,4 @@
-# Webdevelopment
+# Web-development
 Here, I am posting my web development learnings so that everyone can have a roadmap for the same
 
 > These learnings are here strictly as a proof of the course by Apna college
@@ -44,6 +44,6 @@ Here, I am posting my web development learnings so that everyone can have a road
 
      📂 Projects and Practices
          🗃️ practice_files.html
-         
+
  🗃️ README.md
 ```
