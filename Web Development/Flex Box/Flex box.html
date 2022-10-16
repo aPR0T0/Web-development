@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .Flex-Container{
+            width: 100%;
+            border: 2px solid rgb(0, 97, 142);
+            height: 500px;
+            /*To align the items we need to first justify the flex container with proper width and height*/
+            display: flex;
+            /* flex-wrap: wrap;It basically allows the boxes to have the they had initially and also it gives respnonsiveness to your page  */
+            align-content: space-between;
+            flex-flow: row wrap;
+            /* It takes the argument as the flex-direction and the flex-wrap respectively */
+            /* The stretch in align contents only work when the heights for the particular elements are not defined at all */
+            /* align-items: center; it also divides the space between the items */
+            /*The Basic difference between align-content and the align-items is that the align-content doesn't allow the spaces between the large number of items while align-items introduces some space between them*/
+            /* flex-direction: column-reverse; */
+            /*
+            The most important part of the CSS alignment i.e. flex box*/
+            /*
+            1.display block blocks the flex operation while the Flex turns on the flexbox
+            2.flex direction shows in what direction should be the flow of the item, whether rows or columns
+            3.Justify content aligns the item according to your main axis i.e. your horizontal axis in different ways and combinations
+            4.Align-items items according to the cross axis i.e. your vertical axis without changing their arrangment in the main axis
+            5.Short-hand properties here are the flex and flex-flow
+            6.flex-grow, flex-shrink, flex-basis are the properties which are written very briefly just check individual item
+            */
+        }
+        #B1,#B2,#B3,#B4{
+            margin: 1px;
+            width: 100px;
+            height: 100px;
+            border-radius: 2px;
+            border: 2px solid rgb(0, 97, 142);
+            text-align: center;
+        }
+        #B1{
+            flex: 2 1.5 250px;
+            /* Here we are giving the properties--->>> flex-grow flex-shrink flex-basis <<<--- respectively */
+            /* The best property for changing the order of occurrence of the elements
+            Greater the order the position of the element will be later*/
+            background-color: lightskyblue;
+        }
+        #B2{
+            flex-grow: 1.25;/* The rate of growth of the particular element w.r.t to the other elements is done by this elements */
+            /* flex-basis: 200px;We are here just asigning the max width of the particular item */
+            background-color:rgb(191, 175, 0);
+        }
+        #B3{
+            flex-shrink: 1.5;
+            order: 4;
+            /* For flex shrink to work we need to remove the responsiveness of the page i.e. we have to remove the flex wrap property */
+            background-color: bisque;
+        }
+        #B4{
+            order: 5;
+            /* all the align works in the cross axis */
+            align-self: center;/* It is just the align items of the individual items */
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="Flex-Container">
+        <div class="Flex-Item" id="B1">1</div>
+        <div class="Flex-Item" id="B2">2</div>
+        <div class="Flex-Item" id="B3">3</div>
+        <div class="Flex-Item" id="B4">4</div>
+    </div>
+</body>
+</html>

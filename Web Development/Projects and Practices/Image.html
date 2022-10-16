@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Operations</title>
+    <style>
+        .box{
+            border: 5px solid black;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+
+        }
+        img{
+            height: 100%;/*This will contain the image wihtout maintaining the aspect ratio of the image*/
+            width: 100%;/*Height and the width will contain the image and try to fit it full in*/
+            object-fit:cover ;/*This is different tpes of arrangements of image in a frame*/
+        }/*Object fit cover will enlarge the image and maintain its aspect ratio and then fit in the frame or the border defined*/
+    </style>
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="box"><img src="nasa-Q1p7bh3SHj8-unsplash (1).jpg" alt="This is an Image"></div>
+        <div class="box"><img src="nasa-Q1p7bh3SHj8-unsplash.jpg" alt="This was an Image"></div>
+    </div>
+    
+</body>
+</html>

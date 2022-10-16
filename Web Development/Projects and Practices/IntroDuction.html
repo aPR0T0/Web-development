@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First WebPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Lato:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                text-align: center;
+            }
+            thead{
+                font-family:'Lato',sans-serif ;
+                font-weight: 900;
+            }
+            table{
+                text-align: center;
+                border: 2px solid;
+                border-collapse: collapse;
+                border-spacing: 5px;
+            }
+            tr td,th{
+                padding: 5px;
+                border: 2px solid rgb(0, 0, 0) ;
+            }
+    
+        </style>
+    <!--Three ways to do CSS in the HTML doc
+     1.Inline
+     2.Internal
+     3.External
+    -->
+    <!--Internal CSS-->
+    <style>
+        h2{
+            color:blue;
+        }
+    </style>
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Using html entities for special character, symbols, and emojis -->
+    <!--
+        Inline CSS
+    -->
+    <h1 style="color:bisque">Assak World <!--&lt;&Backslash;H1&gt;--></h1><!--here, the Backlslash and other key words are used to display the special characters and are known as entities-->
+    <h2>My name is Alqama</h2>
+    <h3>I am a student at VJTI</h3>
+    <hr>
+    
+    <p><b class="Special">Lorem ipsum dolor sit amet consectetur adipisicing elitb</b> 
+    <i> aut possimus quasi animi neque repellendus, eveniet eligendi libero nobis sapiente perspiciatis nesciunt magnam corporis quo ipsa repudiandae.</i> <!--<small> recusandae neque totam quod adipisci odit delectus. </small>-->Nulla fuga ipsa id obcaecati iusto, aperiam dolores voluptatem animi laudantium nostrum sint, ducimus minus! H<sub>2</sub>O (a+b)<sup>2</sup>=a<sup>2</sup>+2ab+b<sup>2</sup>
+    </p>
+    <!--There are Three Types of Lists
+                1.Ordered List
+                2.Unordered Lists
+                3.Description Lists-->
+    <hr>
+    <h2> To do Ordered List </h2>
+    <ol Type="I">
+        <li class="Special">Study C++</li>
+        <li id="Mera">Read Atleast a single Page</li>
+        <li>Study from these Sources:
+            <ul>
+                <li class="Special">Youtube</li><!--All the elements associated with the special class will have the same properties as assigned to them-->
+                <li>Coursera</li>
+                <li>Revision</li>
+            </ul>
+        </li>
+        <li class="a">Practice Math</li>
+        <li class="a b">Self Study</li>
+    </ol>
+    <hr>
+    <h2><b>To Do Unordered List</b></h2>
+    <ul>
+        <li class="ab">Study <em>C++</em> </li>
+        <li>Read Atleast a single Page</li>
+        <li>Practice Math</li>
+        <li>Self Study</li>
+    </ul>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total Marks</th>
+                <th>Grades</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th>English</th>
+                <td>75</td>
+                <td>-</td>
+                <td>75</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Computer Science</th>
+                <td>75</td>
+                <td>99</td>
+                <td>75</td>
+                <td>A1</td>
+            </tr>
+            <tr>
+                <th>Maths</th>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>A2</td>
+            </tr>
+            <tr>
+                <th>Physics</th>
+                <td>99</td>
+                <td>-</td>
+                <td>75</td>
+                <td>A1</td>
+            </tr>
+            <tr>
+                <th>Chemistry</th>
+                <td>75</td>
+                <td>75</td>
+                <td>75</td>
+                <td>A2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="5">Result = Pass</th>
+        </tfoot>
+    </table>
+    <hr>
+    <a href="NextPage.html" target="_blank"><h2>NextPage</h2></a>
+    <hr>
+    <a href="https://www.google.com" target="_blank"><h1>Google</h1></a> <!--Target Blank ensures that your webpage opens in the new Tab-->
+    <hr>
+    <a href="file:///C:/Users/Alqama%20Shaikh/OneDrive/Desktop/Careers/Main/Mechanical%20Engineering/Sem%201_2/Applied%20Maths/Textbooks/Advanced%20Engineering.pdf" target="_blank" rel="noopener noreferrer">Maths TextBook</a>
+    <br>
+    <a href="file:///C:/Users/Alqama%20Shaikh/OneDrive/Desktop/Careers/Main/Mechanical%20Engineering/Sem%201_2/Applied%20Physics/Assignments/Assignment%20on%20Interference.pdf" target="_blank" rel="noopener noreferrer">Physics Assignment</a>
+    <br>
+    <hr>
+    <img src="C:\Users\Alqama Shaikh\OneDrive\Desktop\Careers\Graphics Design\Practice\Illustrator\Project\Post Design for intership\Posts_multiple_4_2.png" alt="This is an Image" width="350">
+    <hr>
+    <video  src="C:\Users\Alqama Shaikh\OneDrive\Desktop\Careers\Main\Mechanical Engineering\Aerospace Engineering\edX\1.Course introduction and material and the Environment\!.mp4" width="400" controls loop poster="C:\Users\Alqama Shaikh\OneDrive\Desktop\Careers\Graphics Design\Practice\Illustrator\Project\Post Design for intership\Posts_multiple_4_2.png" alt="This is an Image"></video>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <iframe src="https://www.wikipedia.com" frameborder="0" width="1200" height="1200"></iframe>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{ 
+            display: grid;  
+            height: 780px;
+            /* fr basically means fractions, the fractions are with respect to width when accessing through the columns, and with respect to the height when accessing through the rows  */
+            /* The below line is better for responsiveness */
+            grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+            /* Repeat basically applies the same property given number of the times */
+            /* So what minmax does is that it says k we need the particular property to be at least this much and itshould be upto certain value or maybe no limit */
+            grid-template-rows:1fr 2fr;
+
+            /* grid-auto-rows: 100px; it gives the fixed height to the rows
+                grid-auto-columns: 100px; it gives the fixed height to the columns*/
+            /* grid-auto-columns: minmax(100px,150px); */
+            grid-gap: 7px;
+            /* column-gap: 2px;  */
+        }
+        .items{
+            background-color: rgb(208, 146, 52);
+            border-radius: 3px;
+            border: solid 2px rgb(126, 126, 126);
+        }
+        #it2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            /* So what the above line does is that it starts a particular property from 2nd row to 3rd row */
+            grid-column-start: 2;
+            grid-column-end: 4;
+            /* So what the above line does is that it starts a particular property from 3rd column to 4th column */
+        }
+        #it1{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        #it3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        /* Note that once you move one box up or down it is filled by the consecuetive box until the next box is specified with some value */
+        .item-container{
+            display: grid;
+        }
+        .newitem{
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 3px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.class{box $} is used to add names for the div along with $ sign which means number -->
+    <div class="container">
+        <div class="items" id = "it1">Box 1</div>
+        <div class="items  item-container" id = "it2"><div class="newitem">box in box 1</div>
+        <div class="newitem">box in box 2</div>
+        <div class="newitem">box in box 3</div></div>
+        <div class="items" id = "it3">Box 3</div>
+        <div class="items" id = "it4">Box 4</div>
+        <div class="items" id = "it5">Box 5</div>
+    </div>
+</body>
+</html>
