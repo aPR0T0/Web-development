@@ -80,3 +80,39 @@ console.log(naamChin)
 
 // Now, let's slice the array by just getting a subarrat with certain starting and end index
 console.log(naamChin.slice(0,2))
+
+// Spread operator
+// Basically it concatenates the two arrays
+naamChindobara = [...names, ...naam]
+console.log(naamChindobara)
+
+// For loops in arrays
+
+// simplified for loops
+for(let i = 0; i<naamChindobara.length;i++){
+    console.log(naamChindobara[i])
+}
+// for-of loops
+// Basically it will just output the elements of the given array
+for(let key of naamChindobara){
+    console.log(key)
+}
+
+// For-Each
+names.forEach(function( key, index){// So key the actual member of the array and index is the index of the array, the names of these parameters doesn't matter just the postions matter where-in they are kept
+    console.log(key, index)
+})
+
+// Join
+let student = ['a','a','r','i','b']
+console.log(student.join())
+console.log(student.join(''))// here I have option to give a seperator between the two elements of the arrays
+// by default this seperator is the ',' but we can define it what ever we want, so here it is empty string
+console.log(student.join('__'))
+// Isn't this cool 😂
+
+// Split
+// So, this is totally opposite of the join we just need to specify at what particular instant we want to split the whole string or the array whatever it is
+student = student.join(',')
+console.log(student.split(''))
+console.log(student.split(','))
