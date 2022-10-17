@@ -116,3 +116,20 @@ console.log(student.join('__'))
 student = student.join(',')
 console.log(student.split(''))
 console.log(student.split(','))
+
+// filter
+let cities = [
+    {name:'Haryana' , population:100},
+    {name:'UP' , population:10},
+    {name:'J&K' , population:400},
+    {name:'Mumbai' , population:900}
+];
+
+// This will only show the element with the satisfying properties
+console.log(cities.filter(element => element.population<50))
+console.log(cities.filter(element => element.name.length>4))
+
+// Map
+// this will only show the specific data modified
+console.log(cities.map(element => element.population*2))
+console.log(cities.map(element => element.name + ' Love'))
