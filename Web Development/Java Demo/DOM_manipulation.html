@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- Parent Node -->
+
+<head> <!--Child Node For HTML-->
+
+    <!--All nodes below are the DECENDANTS of HTML-->
+    
+    <meta charset="UTF-8"> <!--These are the nodes as children for the just before  node-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title> <!-- Text Node (Child of HEAD) -->
+    <!--Here "title" and "meta" are the SIBLINGS of each other-->
+
+</head>
+
+
+<!--############⚠️⚠️ THEORY + JARGON WARNING ⚠️⚠️###################################################################################################################################-->
+
+<!-- There are two types of nodes in DOM
+    1.HTML Nodes - These nodes are nothing but the tags which we use to define an html doc
+                - Variable Type ->  HTMLCollection
+                - It looks similar to an "array" at first glance but the functions and the contructor used for this collection is totally differnt from the arrays also it doesn't have all of its fucntionalities  
+    2.DOC Nodes - These are the nodes present and interpreted in JS using LEXER and PARSER which basically constructs a tree of these nodes to give us a desirable output
+                - Variable Type ->  NodeList
+-->
+
+<!--##################################################################################################################################################################################-->
+
+
+<!-- Each indentation is also counted as a part of a node which stored in the TEXT NODE-->
+<body> <!--Another Child for the HTML-->
+<!-- Try Playing with the space between comment and the tag above and see the difference in the child nodes of the body tag-->
+    <ul>
+        <li>First Element</li>
+        <li>Second Element</li>
+        <li>Third Element</li>
+    </ul>
+    <!--Also each comment is also stored as a node known as the COMMENT Node-->
+    <script>
+        // Root Node : Top Parent Node available
+        console.log(document.documentElement)
+        // Element Node : The node which is made up of html tag it is known as element node
+        // To access child nodes
+        console.log(document.body)
+        console.log(document.head)
+
+        // To Know all the children of the html doc
+        console.log(document.childNodes)
+        // To know all the children of the child node or any node
+        console.log(document.body.childNodes)
+        // To just know the main nodes other than TEXT and other default node
+        console.log(document.body.children)
+        // To access specific child from the node
+        console.log(document.body.firstChild)
+        console.log(document.body.lastChild)
+        // This will give you the output for the nodes in the HTML structure only
+        console.log(document.body.firstElementChild)
+        console.log(document.body.lastElementChild)
+        // Traversal in HTMLCollection list
+        let i = 0
+        for(node of document.body.children){
+            console.log(`Here is the node ${i}`)
+            i = i+1
+            if(i >= document.body.children.length){
+                i = 0
+            }
+            console.log(node)
+        }
+        // You can create an array from HTMLcollection using a JS function
+        const ChildOFBody = Array.from(document.body.children)
+        console.log(ChildOFBody)
+    </script>
+</body>
+
+</html>
