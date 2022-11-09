@@ -31,11 +31,29 @@
 <!-- Each indentation is also counted as a part of a node which stored in the TEXT NODE-->
 <body> <!--Another Child for the HTML-->
 <!-- Try Playing with the space between comment and the tag above and see the difference in the child nodes of the body tag-->
-    <ul>
+    <!-- Get element by ID method -->
+    <ul id="element">
         <li>First Element</li>
         <li>Second Element</li>
         <li>Third Element</li>
     </ul>
+    <table>
+        <tr>
+            <td>Box 1</td>
+            <td>Box 2</td>
+            <td>Box 3</td>
+        </tr>
+        <tr>
+            <td>Box 4</td>
+            <td>Box 5</td>
+            <td>Box 6</td>
+        </tr>
+        <tr>
+            <td>Box 7</td>
+            <td>Box 8</td>
+            <td>Box 9</td>
+        </tr>
+    </table>
     <!--Also each comment is also stored as a node known as the COMMENT Node-->
     <script>
         // Root Node : Top Parent Node available
@@ -70,6 +88,13 @@
         // You can create an array from HTMLcollection using a JS function
         const ChildOFBody = Array.from(document.body.children)
         console.log(ChildOFBody)
+        const tableTag = document.body.children[1]
+        console.log(tableTag.tBodies[0].rows[0].cells[2].textContent)
+        console.log(tableTag.tBodies[0].rows[0].cells[2].style = "background-color:cyan;")
+
+        // ID search
+        element.style.background = "gray" // A different and interesting way of doing the background color
+        console.log(element)
     </script>
 </body>
 
