@@ -21,7 +21,6 @@ app.post("/login",async (req, res)=>{
     }
     await users.insertMany([data]) // Waits as async is defined
     res.sendFile(templatePath + "/home.html");  
-    
     } ) 
 
 //res = response which is just a variable we expect from the form nothing else
@@ -31,17 +30,12 @@ const data ={
     password:req.body.password
 }
 await users.insertMany([data])
-res.sendFile(templatePath + "/home.html");  
+res.sendFile(templatePath + "/login.html");  
 
 } ) // Should be same as your action defined in the login form's heading
 
-app.post("/home", async( req, res)=>{
-    const data={
-        email:req.body.email,
-        password:req.body.password
-    }
-    await address.insertMany([data])
-    res.sendFile(templatePath + "/signup.html");  
+app.post("/home", ( req, res)=>{
+    res.sendFile(templatePath + "/login.html");  
 })
 
 app.listen(3000,()=> {

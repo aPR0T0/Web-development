@@ -116,6 +116,19 @@ h2:hover{
 iframe,video{
     border-radius: 15px;
 }
+.right-align{
+    margin: 2   5px;
+    border-radius: 15px;
+    background-color: #FFCC00;
+}
+.right-align:hover{
+    margin-left: auto;
+    order: 11;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #ffcc00bf;
+
+}
 .Circle{
     width:30%;
     clip-path: circle(43% at 49% 50%);
