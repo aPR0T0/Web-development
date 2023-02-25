@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;  
+    /* This allows us to change even the box model */
+    list-style: none;
+}
+body{
+    margin: 0px;
+    background-color: #262626;
+}
+.header{
+    background-color: #FFCC00;
+    text-align: center;
+    margin: 0px;
+}
+.banner{
+    background-image: url(../assets/logo/Profile.gif);
+    height: 17vh;
+    min-height: 100px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+nav {
+
+    display: flex;
+    background-color: #000000;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    /* overflow: hidden; */
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;/*It is aligning the text inside their own boxes*/
+    padding: 7px 20px 7px 20px;
+    float: left;
+    margin-top:15px;
+    margin-bottom: 15px;
+    /* float: right; */
+    /* It Just The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning). */
+    color: #FFCC00;
+    border-radius: 18px;
+    transition: background-color 0.5s, border-radius 0.2s;
+}
+nav a:hover{
+    float: left;
+    background-color:  #333333;
+    border-radius: 20px;
+}
+a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"],a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"],a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]{
+    padding: 10px;
+    background-color:  #FFCC00;
+    border-radius: 5px;
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+}
+a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhiZ1pLUFJDVGpibS1QVGo4QVpNX1ZjQU1XZ3xBQ3Jtc0trYXVJQ0hQbEE1RGw5NnRoLTlnN04wZXFxR0pNTkp3M3VKbG9ZQl9IbW1rR3l1ZHZvbEE1cTVOQ1RWM2pWWU1EYzJmWlFDRVBzNkpnNUhDRlBBbVFSZVNxRkF0eDNWU2hSWVJRVDlKekVlWDVFaWZtbw&q=https%3A%2F%2Fcodepen.io%2Fapnacollege%2Fpen%2FmdrmdEa&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXE1MXFReHpJSTB1M2s3MVRfaHA5SWJkRjlOQXxBQ3Jtc0tuZTlRZnREemctSU9rcW5DV3lHeWN3elZVZW9id1hEY1JDWEhUS1BmZWN3a2tEM0IwY096YWlpR3dtaG9pSXRVODB3TllxbjBCNk9jNHRRRTQ1VzNyZlpVT3V2SHhRZF9SN0pGUmdtR0VoWWNlMVNNRQ&q=https%3A%2F%2Ft.me%2Fapnikakshaofficial&v=61ppyY5rUB0"]:hover,a[href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"]:hover{
+    /* background-color:rgba(216, 167, 17, 0.941); */
+    background-color: #ffd428;
+    color: #000000;
+}
+section{
+    color: #FFCC00;
+}
+footer{
+    bottom: 0px;
+    background-color: black;
+    overflow: hidden;
+    height: 60px;
+}
+footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    float: left;
+    font-size: 1.15em;
+}
+.copyw{
+    padding-top: 25px;
+    float: right;
+    font-size: 0.75em;
+}
+main{
+    text-align: center;
+}
+
+h2{
+    color: #FFCC00;
+    background-color: #42424278;
+    border-radius:5px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 10px;
+    transition: background 1.5s;
+}
+h2:hover{
+    background: linear-gradient(to right,#42424278,#767676 );
+}
+.c2{
+    animation: background 1.5s;
+}
+.c2:hover{
+    background-color: linear-gradient(to right,#767676,#42424278 ); 
+}
+.right-align{
+    margin-left: auto;
+    order: 11;
+}
+.high{
+    order:10;
+}
+iframe,video{
+    border-radius: 15px;
+}
+.right-align{
+    margin: 2   5px;
+    border-radius: 15px;
+    background-color: #FFCC00;
+}
+.right-align:hover{
+    margin-left: auto;
+    order: 11;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #ffcc00bf;
+
+}
+.Circle{
+    width:30%;
+    clip-path: circle(43% at 49% 50%);
+}
+.Found{
+    font-size: 2em;
+    color: #FFCC00;
+}
+.paadding{
+    padding: 20px;
+}
+.found1{
+    color: aliceblue;
+    font-size: 1.3em;
+}
+.found12{
+    color: aliceblue;
+    font-size: 1em;
+}
+/*
+@media all and (max-width:999px) and (min-width:700px){
+    nav{
+        padding-left:10%;
+    }
+    footer{
+        font-size: 8px;
+    }
+    body{
+        font-size: 12px;
+    }
+} */
+
+
+
+.xtreme {
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.carousel-cell img{
+    max-width: 100%;
+}
+.carousel-cell {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+    position: relative;
+    width: 100%;
+    height: 200px;
+} 
+.ck{
+    margin-top: 50px;
+}
+.carousel-cell iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.X{
+    border-radius: 10px;
+    width: 22%;
+}
+@media all and (max-width:699px){
+    nav{
+        flex-direction: column;
+    }
+    .right-align{
+        margin-right: auto;
+    }
+    .header{
+        height: 6.33vh;
+    }
+}
